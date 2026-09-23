@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jasurbek Safarov | Junior Software Developer</title>
+<meta name="description" content="Portfolio of Jasurbek Safarov, Junior Software Developer and Junior Web Developer in Tashkent, Uzbekistan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#04060a;--card:rgba(255,255,255,.035);--line:rgba(110,160,255,.17);--tx:#e6edf8;--mut:#8794ad;--blue:#3b82f6;--cyan:#22d3ee;--grad:linear-gradient(120deg,#3b82f6,#22d3ee);--fb:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;--fh:'Sora','Figtree',system-ui,sans-serif;--fm:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px));background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 1.0625rem/1.65 var(--fb);overflow-x:hidden;animation:fin .8s ease both}
+@keyframes fin{from{opacity:0}}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
+.bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.bg::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(110,160,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(110,160,255,.055) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 50% 15%,#000 15%,transparent 72%);mask-image:radial-gradient(ellipse at 50% 15%,#000 15%,transparent 72%)}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.34;animation:fl 14s ease-in-out infinite alternate}
+.o1{width:420px;height:420px;background:#2563eb;top:-120px;right:-80px}
+.o2{width:340px;height:340px;background:#06b6d4;top:38%;left:-140px;animation-delay:-6s;opacity:.2}
+@keyframes fl{to{transform:translate(-40px,50px)}}
+main,footer{position:relative;z-index:1}
+.w{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:96px 0}
+h1,h2,h3{font-family:var(--fh);margin:0;line-height:1.1;letter-spacing:-.02em}
+h2{font-size:clamp(2rem,5vw,3.1rem);margin-bottom:14px}
+.sub{color:var(--mut);max-width:56ch;margin:0 0 44px}
+.g{background:var(--card);border:1px solid var(--line);border-radius:20px;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);transition:border-color .3s,box-shadow .3s,transform .3s}
+.g:hover{border-color:rgba(34,211,238,.4);box-shadow:0 20px 50px -24px rgba(34,211,238,.45)}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:rgba(4,6,10,.72);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nv{max-width:1120px;margin:0 auto;height:64px;padding:0 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font:600 1.05rem var(--fh);display:flex;align-items:center;gap:10px}
+.logo b{width:32px;height:32px;border-radius:9px;background:var(--grad);color:#04060a;display:grid;place-items:center;font:700 .8rem var(--fm)}
+#links{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+#links a{padding:8px 14px;border-radius:10px;color:var(--mut);font-size:.95rem;font-weight:500;transition:color .2s,background .2s}
+#links a:hover,#links a.on{color:var(--tx);background:rgba(59,130,246,.14)}
+#menu{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:42px;height:42px;color:var(--tx);cursor:pointer;place-items:center}
+#menu i,#menu i::before,#menu i::after{display:block;width:18px;height:2px;background:currentColor;border-radius:2px;transition:transform .25s,background .25s;position:relative}
+#menu i::before,#menu i::after{content:"";position:absolute;left:0}
+#menu i::before{top:-6px}#menu i::after{top:6px}
+#menu[aria-expanded=true] i{background:transparent}
+#menu[aria-expanded=true] i::before{transform:translateY(6px) rotate(45deg)}
+#menu[aria-expanded=true] i::after{transform:translateY(-6px) rotate(-45deg)}
+/* hero */
+#home{min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:120px 0 72px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,7vw,5rem);animation:up .8s .15s ease both}
+.roles{margin:18px 0 0;font:600 clamp(1.15rem,2.6vw,1.6rem)/1.35 var(--fh);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;animation:up .8s .3s ease both}
+.roles span{display:block}
+.hero p.d{color:var(--mut);max-width:50ch;margin:22px 0 32px;animation:up .8s .45s ease both}
+.btns{display:flex;flex-wrap:wrap;gap:14px;animation:up .8s .6s ease both}
+@keyframes up{from{opacity:0;transform:translateY(18px)}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:12px;font-weight:600;border:1px solid var(--line);transition:transform .25s,box-shadow .25s,background .25s;cursor:pointer;font-family:var(--fb);font-size:1rem;color:var(--tx);background:var(--card)}
+.btn:hover{transform:translateY(-2px);background:rgba(59,130,246,.14)}
+.btn.p{background:var(--grad);color:#04060a;border:0;box-shadow:0 10px 34px -10px rgba(34,211,238,.6)}
+.btn.p:hover{box-shadow:0 14px 42px -8px rgba(34,211,238,.8);background:var(--grad)}
+.btn.s{padding:9px 16px;font-size:.9rem;border-radius:10px}
+.i{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.code{position:relative;padding:0;overflow:visible;animation:up 1s .5s ease both;border-color:rgba(34,211,238,.32);box-shadow:0 0 0 1px rgba(59,130,246,.15),0 30px 80px -30px rgba(34,211,238,.4)}
+.code .bar{display:flex;gap:7px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.code .bar i{width:11px;height:11px;border-radius:50%;background:#26324a}
+.code pre{margin:0;padding:22px;font:.9rem/1.85 var(--fm);overflow-x:auto;color:#c4d2ee}
+.k{color:#60a5fa}.s{color:#67e8f9}.cur{display:inline-block;width:8px;height:1.05em;background:var(--cyan);vertical-align:-3px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.chip{position:absolute;padding:8px 14px;border-radius:999px;background:rgba(4,6,10,.85);border:1px solid var(--line);font-size:.85rem;font-weight:600;color:var(--cyan);animation:fl 5s ease-in-out infinite alternate}
+.c1{right:-14px;top:-20px}.c2{left:-16px;bottom:-18px;animation-delay:-2.5s}
+/* about */
+.ab{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
+.ab p{color:#b7c3dc;margin:0 0 18px}
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tag{padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-weight:500;font-size:.95rem;transition:border-color .25s,color .25s}
+.tag:hover{border-color:var(--cyan);color:var(--cyan)}
+/* projects */
+.tabs{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap}
+.tabs button{font:500 .95rem var(--fb);color:var(--mut);background:none;border:1px solid var(--line);padding:9px 20px;border-radius:999px;cursor:pointer;transition:all .25s}
+.tabs button[aria-pressed=true]{color:#04060a;background:var(--grad);border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:22px}
+.pc{position:relative;display:flex;flex-direction:column;padding:28px;overflow:hidden}
+.pc[hidden]{display:none}
+.pc::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(320px circle at var(--x,50%) var(--y,0),rgba(34,211,238,.13),transparent 65%)}
+.pc:hover{transform:translateY(-5px)}.pc:hover::after{opacity:1}
+.cat{align-self:flex-start;font-size:.8rem;font-weight:600;color:var(--cyan);padding:4px 12px;border-radius:999px;background:rgba(34,211,238,.1);margin-bottom:16px}
+.pc h3{font-size:1.25rem;margin-bottom:10px}
+.pc p{color:var(--mut);margin:0 0 18px;font-size:.98rem}
+.tech{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:auto 0 22px;padding:0}
+.tech li{font-size:.82rem;padding:4px 11px;border-radius:8px;background:rgba(59,130,246,.14);color:#93c5fd}
+.act{display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:1}
+/* skills */
+.sk{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px}
+.sk .g{padding:26px}
+.sk h3{display:flex;align-items:center;gap:12px;font-size:1.1rem;margin-bottom:18px}
+.ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(59,130,246,.15);color:var(--cyan);font-size:1.15rem}
+.sk ul{display:flex;flex-wrap:wrap;gap:9px;list-style:none;margin:0;padding:0}
+.sk li{padding:7px 14px;border-radius:10px;border:1px solid var(--line);font-weight:500;font-size:.95rem}
+/* experience / education */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.pn{padding:32px}
+.pn h3{font-size:1.3rem;margin-bottom:8px}
+.pn p{color:var(--mut);margin:0 0 6px}
+.yr{display:inline-block;margin-bottom:14px;padding:4px 12px;border-radius:999px;background:rgba(34,211,238,.1);color:var(--cyan);font-weight:600;font-size:.85rem}
+.lg{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.lg li{display:grid;gap:8px}
+.lg div{display:flex;justify-content:space-between;font-weight:500}
+.lg span{color:var(--mut);font-size:.92rem}
+.lg meter{width:100%;height:6px;border-radius:6px;appearance:none;-webkit-appearance:none;background:rgba(255,255,255,.07);border:0;overflow:hidden}
+.lg meter::-webkit-meter-bar{background:rgba(255,255,255,.07);border:0;height:6px;border-radius:6px}
+.lg meter::-webkit-meter-optimum-value{background:var(--grad);border-radius:6px}
+.lg meter::-moz-meter-bar{background:var(--grad);border-radius:6px}
+/* contact */
+.ct{display:grid;grid-template-columns:1fr 1.1fr;gap:40px}
+.ct h2{margin-bottom:14px}
+.ci{display:grid;gap:12px;margin-top:28px}
+.ci a{display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:14px}
+.ci small{display:block;color:var(--mut);font-size:.8rem;line-height:1.3}
+form.g{padding:30px;display:grid;gap:18px}
+label{display:grid;gap:8px;font-weight:500;font-size:.95rem}
+input,textarea{font:inherit;color:var(--tx);background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:13px 15px;width:100%;transition:border-color .25s,box-shadow .25s}
+input:focus,textarea:focus{outline:0;border-color:var(--cyan);box-shadow:0 0 0 3px rgba(34,211,238,.18)}
+textarea{min-height:130px;resize:vertical}
+#st{margin:0;color:var(--cyan);font-size:.92rem;min-height:1.4em}
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--mut);font-size:.95rem}
+footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+footer strong{color:var(--tx);font-family:var(--fh)}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease var(--d,0s),transform .7s ease var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+@media(max-width:900px){.hero,.ab,.ct,.two{grid-template-columns:1fr}.hero{gap:48px}.c1{right:8px}.c2{left:8px}section{padding:72px 0}}
+@media(max-width:760px){#menu{display:grid}#links{position:absolute;top:100%;left:0;right:0;flex-direction:column;padding:12px 22px 20px;background:rgba(4,6,10,.96);border-bottom:1px solid var(--line);transform:translateY(-8px);opacity:0;visibility:hidden;transition:all .25s}#links.open{transform:none;opacity:1;visibility:visible}#links a{display:block;padding:13px 10px;font-size:1.05rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="code"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+<symbol id="srv"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></symbol>
+<symbol id="db"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+<symbol id="git"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></symbol>
+<symbol id="ide"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></symbol>
+<symbol id="cube"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
+<symbol id="mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+<symbol id="tel"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="gh"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+<symbol id="ext"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+</defs></svg>
+<div class="bg" aria-hidden="true"><div class="orb o1"></div><div class="orb o2"></div></div>
+
+<nav aria-label="Main">
+<div class="nv">
+<a class="logo" href="#home"><b aria-hidden="true">JS</b>Jasurbek Safarov</a>
+<button id="menu" aria-expanded="false" aria-controls="links" aria-label="Toggle menu"><i></i></button>
+<ul id="links">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<main>
+<section id="home"><div class="w hero">
+<div>
+<h1>Hi, I'm Jasurbek</h1>
+<p class="roles"><span>Junior Software Developer</span><span>Junior Web Developer</span></p>
+<p class="d">Building modern web applications, working with APIs and databases, and continuously growing as a software developer.</p>
+<div class="btns"><a class="btn p" href="#projects">View Projects</a><a class="btn" href="#contact">Contact Me</a><a class="btn" href="#" aria-label="GitHub profile (link to be added)"><svg class="i"><use href="#gh"/></svg>GitHub</a></div>
+</div>
+<div class="g code" aria-hidden="true">
+<span class="chip c1">REST API</span><span class="chip c2">Blender</span>
+<div class="bar"><i></i><i></i><i></i></div>
+<pre><span class="k">const</span> developer = {
+  name: <span class="s">"Jasurbek Safarov"</span>,
+  role: <span class="s">"Junior Software Developer"</span>,
+  stack: [<span class="s">"Node.js"</span>, <span class="s">"MySQL"</span>, <span class="s">"MongoDB"</span>],
+  location: <span class="s">"Tashkent, UZ"</span>,
+  learning: <span class="k">true</span><span class="cur"></span>
+};</pre>
+</div>
+</div></section>
+
+<section id="about"><div class="w">
+<h2 class="rv">About me</h2>
+<p class="sub rv">Software developer with a background in Information Technologies.</p>
+<div class="ab">
+<div class="rv">
+<p>I am a beginner software developer with a higher education in Information Technologies. In 2026, I graduated from L.N. Gumilyov Eurasian National University with a degree in Computer Engineering and Software Engineering.</p>
+<p>I have practical experience in web development, website development, databases and REST APIs. I also have experience with 2D/3D modeling and creating 3D characters in Blender.</p>
+<p>I am motivated to grow as a developer, work in a team, and apply my knowledge to real-world projects.</p>
+</div>
+<div class="tags rv">
+<span class="tag">Software development</span><span class="tag">Web development</span><span class="tag">REST APIs</span><span class="tag">Databases</span><span class="tag">2D/3D modeling</span><span class="tag">Blender</span><span class="tag">Continuous learning</span>
+</div>
+</div>
+</div></section>
+
+<section id="projects"><div class="w">
+<h2 class="rv">Projects</h2>
+<p class="sub rv">Web applications and 3D work. Replace the GitHub and Live Demo placeholders with your real links.</p>
+<div class="tabs rv" role="group" aria-label="Filter projects">
+<button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="web">Web applications</button><button aria-pressed="false" data-f="3d">3D projects</button>
+</div>
+<div class="grid">
+<article class="g pc rv" data-c="web"><span class="cat">Web application</span><h3>Web Applications</h3><p>Web applications developed during educational and practical projects.</p><ul class="tech"><li>HTML</li><li>JavaScript</li></ul><div class="act"><a class="btn s" href="#"><svg class="i"><use href="#gh"/></svg>GitHub</a><a class="btn s" href="#"><svg class="i"><use href="#ext"/></svg>Live Demo</a></div></article>
+<article class="g pc rv" data-c="web"><span class="cat">Web application</span><h3>JavaScript / Node.js Projects</h3><p>Projects built with JavaScript and Node.js during study and practice.</p><ul class="tech"><li>JavaScript</li><li>Node.js</li></ul><div class="act"><a class="btn s" href="#"><svg class="i"><use href="#gh"/></svg>GitHub</a><a class="btn s" href="#"><svg class="i"><use href="#ext"/></svg>Live Demo</a></div></article>
+<article class="g pc rv" data-c="web"><span class="cat">Web application</span><h3>REST API Projects</h3><p>REST APIs built and tested with Node.js and Postman.</p><ul class="tech"><li>Node.js</li><li>REST API</li><li>Postman</li></ul><div class="act"><a class="btn s" href="#"><svg class="i"><use href="#gh"/></svg>GitHub</a><a class="btn s" href="#"><svg class="i"><use href="#ext"/></svg>Live Demo</a></div></article>
+<article class="g pc rv" data-c="web"><span class="cat">Web application</span><h3>Database-Driven Applications</h3><p>Applications that store and retrieve data with relational and document databases.</p><ul class="tech"><li>MySQL</li><li>MongoDB</li></ul><div class="act"><a class="btn s" href="#"><svg class="i"><use href="#gh"/></svg>GitHub</a><a class="btn s" href="#"><svg class="i"><use href="#ext"/></svg>Live Demo</a></div></article>
+<article class="g pc rv" data-c="3d"><span class="cat">3D project</span><h3>3D Character Creation</h3><p>3D characters created and modeled in Blender.</p><ul class="tech"><li>Blender</li></ul><div class="act"><a class="btn s" href="#"><svg class="i"><use href="#gh"/></svg>GitHub</a><a class="btn s" href="#"><svg class="i"><use href="#ext"/></svg>Live Demo</a></div></article>
+<article class="g pc rv" data-c="3d"><span class="cat">3D project</span><h3>2D / 3D Objects and Scenes</h3><p>2D and 3D objects and scenes built for practice and portfolio work.</p><ul class="tech"><li>Blender</li></ul><div class="act"><a class="btn s" href="#"><svg class="i"><use href="#gh"/></svg>GitHub</a><a class="btn s" href="#"><svg class="i"><use href="#ext"/></svg>Live Demo</a></div></article>
+<article class="g pc rv" data-c="3d"><span class="cat">3D project</span><h3>Blender Projects</h3><p>Modeling projects exploring shapes, scenes and composition in Blender.</p><ul class="tech"><li>Blender</li></ul><div class="act"><a class="btn s" href="#"><svg class="i"><use href="#gh"/></svg>GitHub</a><a class="btn s" href="#"><svg class="i"><use href="#ext"/></svg>Live Demo</a></div></article>
+</div>
+</div></section>
+
+<section id="skills"><div class="w">
+<h2 class="rv">Skills</h2>
+<p class="sub rv">The languages, tools and software I work with.</p>
+<div class="sk">
+<div class="g rv"><h3><span class="ic"><svg class="i"><use href="#code"/></svg></span>Frontend</h3><ul><li>HTML</li><li>JavaScript</li></ul></div>
+<div class="g rv"><h3><span class="ic"><svg class="i"><use href="#srv"/></svg></span>Backend</h3><ul><li>Node.js</li><li>REST API</li></ul></div>
+<div class="g rv"><h3><span class="ic"><svg class="i"><use href="#db"/></svg></span>Databases</h3><ul><li>MySQL</li><li>MongoDB</li></ul></div>
+<div class="g rv"><h3><span class="ic"><svg class="i"><use href="#git"/></svg></span>Tools</h3><ul><li>Git</li><li>GitHub</li><li>Postman</li></ul></div>
+<div class="g rv"><h3><span class="ic"><svg class="i"><use href="#ide"/></svg></span>IDEs</h3><ul><li>IntelliJ IDEA</li><li>VS Code</li><li>Android Studio</li></ul></div>
+<div class="g rv"><h3><span class="ic"><svg class="i"><use href="#cube"/></svg></span>3D</h3><ul><li>Blender</li></ul></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="w">
+<h2 class="rv">Experience</h2>
+<div class="g pn rv" style="max-width:640px;margin-top:30px">
+<h3>Educational &amp; Production Practice</h3>
+<p>Practical experience gained during education through web development projects and software development tasks.</p>
+</div>
+</div></section>
+
+<section id="education"><div class="w">
+<h2 class="rv">Education</h2>
+<p class="sub rv">Degree and languages.</p>
+<div class="two">
+<div class="g pn rv">
+<span class="yr">2026</span>
+<h3>L.N. Gumilyov Eurasian National University</h3>
+<p>Faculty of Information Technologies</p>
+<p>Specialty: Computer Engineering and Software Engineering</p>
+<p>Bachelor's Degree</p>
+</div>
+<div class="g pn rv">
+<h3 style="margin-bottom:22px">Languages</h3>
+<ul class="lg">
+<li><div>Kazakh <span>Fluent</span></div><meter min="0" max="100" value="100" aria-label="Kazakh: fluent"></meter></li>
+<li><div>Russian <span>Fluent</span></div><meter min="0" max="100" value="100" aria-label="Russian: fluent"></meter></li>
+<li><div>Uzbek <span>Fluent</span></div><meter min="0" max="100" value="100" aria-label="Uzbek: fluent"></meter></li>
+<li><div>English <span>B1</span></div><meter min="0" max="100" value="45" aria-label="English: B1"></meter></li>
+</ul>
+</div>
+</div>
+</div></section>
+
+<section id="contact"><div class="w ct">
+<div class="rv">
+<h2>Let's work together</h2>
+<p style="color:var(--mut);margin:0">Have a project or opportunity? Feel free to contact me.</p>
+<div class="ci">
+<a class="g" href="mailto:safarovj2003@gmail.com"><span class="ic"><svg class="i"><use href="#mail"/></svg></span><span><small>Email</small>safarovj2003@gmail.com</span></a>
+<a class="g" href="tel:+998949240506"><span class="ic"><svg class="i"><use href="#tel"/></svg></span><span><small>Phone</small>+998 94 924 05 06</span></a>
+<a class="g" href="#"><span class="ic"><svg class="i"><use href="#gh"/></svg></span><span><small>GitHub</small>Profile link to be added</span></a>
+</div>
+</div>
+<form class="g rv" id="f">
+<label for="n">Name<input id="n" name="name" autocomplete="name" required></label>
+<label for="e">Email<input id="e" name="email" type="email" autocomplete="email" required></label>
+<label for="m">Message<textarea id="m" name="message" required></textarea></label>
+<button class="btn p" type="submit" style="justify-content:center">Send Message</button>
+<p id="st" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+</main>
+
+<footer><div class="w"><span><strong>Jasurbek Safarov</strong> · Junior Software Developer</span><span>© 2026 Jasurbek Safarov</span></div></footer>
+
+<script>
+const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)];
+document.documentElement.classList.add('js');
+const btn=$('#menu'),list=$('#links');
+const close=()=>{list.classList.remove('open');btn.setAttribute('aria-expanded','false')};
+btn.addEventListener('click',()=>btn.setAttribute('aria-expanded',list.classList.toggle('open')));
+$$('#links a').forEach(a=>a.addEventListener('click',close));
+document.addEventListener('keydown',e=>e.key==='Escape'&&close());
+$$('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const t=e.target;t.classList.add('in');io.unobserve(t);setTimeout(()=>t.classList.remove('rv','in'),1000)}}),{threshold:.1});
+$$('.rv').forEach((el,i)=>{el.style.setProperty('--d',(i%3)*.08+'s');io.observe(el)});
+const links=$$('#links a'),so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+$$('main section').forEach(s=>so.observe(s));
+$$('.tabs button').forEach(b=>b.addEventListener('click',()=>{$$('.tabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));$$('.pc').forEach(c=>c.hidden=b.dataset.f!=='all'&&c.dataset.c!==b.dataset.f)}));
+$$('.pc').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--x',e.clientX-r.left+'px');c.style.setProperty('--y',e.clientY-r.top+'px')}));
+$('#f').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);
+const s=encodeURIComponent('Portfolio message from '+d.get('name')),b=encodeURIComponent(d.get('message')+'\n\n'+d.get('name')+' ('+d.get('email')+')');
+$('#st').textContent='Opening your email app. If nothing opens, write to safarovj2003@gmail.com directly.';
+location.href='mailto:safarovj2003@gmail.com?subject='+s+'&body='+b});
+</script>
+</body>
+</html>
