@@ -264,7 +264,7 @@ footer strong{color:var(--tx);font-family:var(--fh)}
 <a class="g" href="#"><span class="ic"><svg class="i"><use href="#gh"/></svg></span><span><small>GitHub</small>Profile link to be added</span></a>
 </div>
 </div>
-<form class="g rv" id="f">
+<form class="g rv" id="f" action="https://formspree.io/f/xppwjnoe" method="POST">
 <label for="n">Name<input id="n" name="name" autocomplete="name" required></label>
 <label for="e">Email<input id="e" name="email" type="email" autocomplete="email" required></label>
 <label for="m">Message<textarea id="m" name="message" required></textarea></label>
@@ -291,10 +291,17 @@ const links=$$('#links a'),so=new IntersectionObserver(es=>es.forEach(e=>{if(e.i
 $$('main section').forEach(s=>so.observe(s));
 $$('.tabs button').forEach(b=>b.addEventListener('click',()=>{$$('.tabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));$$('.pc').forEach(c=>c.hidden=b.dataset.f!=='all'&&c.dataset.c!==b.dataset.f)}));
 $$('.pc').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--x',e.clientX-r.left+'px');c.style.setProperty('--y',e.clientY-r.top+'px')}));
-$('#f').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);
-const s=encodeURIComponent('Portfolio message from '+d.get('name')),b=encodeURIComponent(d.get('message')+'\n\n'+d.get('name')+' ('+d.get('email')+')');
-$('#st').textContent='Opening your email app. If nothing opens, write to safarovj2003@gmail.com directly.';
-location.href='mailto:safarovj2003@gmail.com?subject='+s+'&body='+b});
+$('#f').addEventListener('submit', e => {
+  e.preventDefault();
+  const form = e.target, status = $('#st');
+  status.textContent = 'Sending...';
+  fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+    .then(res => {
+      if (res.ok) { status.textContent = 'Thanks! Your message has been sent.'; form.reset(); }
+      else { status.textContent = 'Something went wrong — email me directly at safarovj2003@gmail.com.'; }
+    })
+    .catch(() => { status.textContent = 'Something went wrong — email me directly at safarovj2003@gmail.com.'; });
+});
 </script>
 </body>
 </html>
